@@ -24,6 +24,18 @@ export default function Header() {
               {item.label}
             </NavLink>
           ))}
+          <NavLink
+            to="/login"
+            className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+          >
+            Log in
+          </NavLink>
+          <NavLink
+            to="/register"
+            className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}
+          >
+            Register
+          </NavLink>
         </nav>
       </div>
     </header>

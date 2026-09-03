@@ -7,6 +7,8 @@ import AdminLayout from './components/AdminLayout.jsx'
 import Home from './pages/Frontend/Home.jsx'
 import About from './pages/Frontend/About.jsx'
 import Shop from './pages/Frontend/Shop.jsx'
+import Login from './pages/User/Login.jsx'
+import Register from './pages/User/Register.jsx'
 import Dashboard from './pages/Admin/Dashboard.jsx'
 import Orders from './pages/Admin/Orders.jsx'
 import Customers from './pages/Admin/Customers.jsx'
@@ -21,6 +23,8 @@ createRoot(document.getElementById('root')).render(
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/shop" element={<Shop />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Route>
 
         <Route path="/admin" element={<AdminLayout />}>
